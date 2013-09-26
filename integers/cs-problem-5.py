@@ -1,3 +1,7 @@
+#
+# CS Problem 5
+# Author: Daniel Wechsler
+#
 
 import numpy as np
 import matplotlib.pyplot as plt
