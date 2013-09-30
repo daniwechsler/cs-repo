@@ -24,6 +24,34 @@ y = k_ln_prime
 plt.plot(x, y)
 plt.show()
 
+# Evaluate some values for the zeta Reinmann function
+def zetaReinman (primes, z):
+   
+    prod     = 1
+    for p in primes:
+        q       = 1/(1-pow(p, -z))            
+        prod    = q * prod
+  
+    return prod        
 
+
+z = 2
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is  %.50f" % (z, zetaRein))
+z = 10
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is %.50f" % (z, zetaRein))
+z = 16
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is %.50f" % (z, zetaRein))
+z = 22
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is %.50f" % (z, zetaRein))
+z = 30
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is %.50f" % (z, zetaRein))
+z = 40
+zetaRein = zetaReinman(primes, z)
+print ("Zeta Reinmann product of %i is %.50f" % (z, zetaRein))
 
             

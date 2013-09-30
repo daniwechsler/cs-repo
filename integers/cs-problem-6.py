@@ -35,7 +35,7 @@ for q in range(2, N) :
    
                 
 
-print ("Carmichael numbers below N are:")
+print ("Carmichael numbers below N=%i are:" % (N))
 print ("%s" % format(carmichaelNumbers))
 
 
