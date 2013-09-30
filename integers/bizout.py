@@ -9,5 +9,5 @@ def bizout (a,b):
     return (y,x-q*y)
 
 
-biz = bizout(2,35)
+biz = bizout(3,35)
 print("%s" % format(biz))
