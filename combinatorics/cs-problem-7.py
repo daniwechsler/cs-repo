@@ -7,9 +7,8 @@ import sys
 
 
 #
-# Returns true if the filed given by a complex number 
-# is attacked by a queen to the left of column (column
-# is the index in the list representing the board.
+# Returns true if the field (given by a complex number) 
+# is attacked by a queen to the left of the given column (list index)
 #
 def fieldIsAttacked (state, column, field):
 
@@ -18,14 +17,14 @@ def fieldIsAttacked (state, column, field):
     for col in range(0, column):
         
         # Check if the queen at col is on the same row or column as field. Its the case if the queens
-        # position has same real or imaginary part as the new position.
+        # position has same real or imaginary part as field.
         queen = state[col]
         if field.real == queen.real or field.imag == queen.imag :
             return True
 
-        # Check if the queen at col is on a diagonal though field. Is the case if sum or difference
-        # of real part and imag of queen position is equeal to sum or diff of real and imaginary part
-        # of filed.
+        # Check if the queen at col is on a diagonal of field. Is the case if sum or difference
+        # of real and imaginary part of queen's position is equeal to sum or difference of real
+        # and imaginary part of filed.
         if (field.real+field.imag == queen.real+queen.imag or field.real-field.imag == queen.real-queen.imag) :
             return True
         
@@ -75,7 +74,7 @@ def isSameState (stateA, stateB) :
 #
 def isIndependentSolution (independentSolutions, solution):
     
-    sDep            = []    # Holds all dependent solutions of solution (reflections / rotations)
+    sDep            = []    # Holds all dependent states of solution (reflections / rotations)
 
     # Compute all possible rotations / reflections (combinations)
     ref         = [ complexComplement(c) for c in solution ]            # Reflection on X
@@ -95,8 +94,7 @@ def isIndependentSolution (independentSolutions, solution):
     sDep.append(refRot180)
     sDep.append(refRot270)    
    
-    # Go through all independent solutions we have so far and check wheather the solution
-    # under test is independent of those in the list.
+    # Check wheather the solution under test is independent of those we have found so far.
     for independentSolution in independentSolutions :
         for dep in sDep :
             if isSameState (dep, independentSolution):
@@ -105,7 +103,10 @@ def isIndependentSolution (independentSolutions, solution):
     return True
     
 
-size            = 24                    # The size of the chess board e.g 8x8
+
+
+
+size            = 6                     # The size of the chess board e.g 8 (For an 8x8 board)
 k               = size-1                # The maximum value of b and a (real and im part)
 state           = [None]*size           # Holds the state of the board (size entries)
 solutions       = []                    # Will hold all solutions to the size-Queen problem
@@ -113,42 +114,40 @@ indepSolutions  = []                    # Will hold all independent solutions to
 columnIndex     = 0                     # Holds the current column index of the state (List)
 
 
-
   
 while True:
     
-    if state[columnIndex] == None : # There is no queen on the current column. Put it at lowest row on column
+    if state[columnIndex] == None :             # There is no queen on the current column. Put it at lowest row on column
         
-        realPart    = columnIndex * 2 - k # Compute real part from column index
+        realPart    = columnIndex * 2 - k       # Compute real part from column index
         newPosition = complex (realPart, -k)
         state[columnIndex] = newPosition
     else :
    
-        # There is a queen on the current column -> we move it up one field
-        newPosition = state[columnIndex] + complex(0, 2)
+        
+        newPosition = state[columnIndex] + complex(0, 2)     #There is a queen on the current column -> we move it up one field
 
-        # If new position is out of the boeard go back to left column
-        if newPosition.imag > k:
+        
+        if newPosition.imag > k:        # If new position is outside of the board go back to left column
 
-            if columnIndex == 0: # If there is no left column we are done
+            if columnIndex == 0:        # If there is no left column the problem is solved
                 break
-            
-            
-            state[columnIndex] = None # Remove the queen from current column
+                
+            state[columnIndex] = None   # Remove the queen from current column
             columnIndex -= 1
             continue
         else:
           
             state[columnIndex] = newPosition
 
-    # Check wheather the new position is under attack
-    # (Thus no queen on the left columns attacks the new position)
-    if fieldIsAttacked (state, columnIndex, newPosition):
-        continue # Try other position
+    
+    
+    if fieldIsAttacked (state, columnIndex, newPosition):       # Check wheather the new position is under attack
+        continue # Try other position                           
     else :
-        if columnIndex == size - 1: # We got a solution
-            #print("Solution %s" % format(state))
-            solutions.append(state[:]) # Store a copy of the state in our result list
+        if columnIndex == size - 1:     # We got a solution
+            
+            solutions.append(state[:])  # Store a copy of the state in our result list
             
             if isIndependentSolution(indepSolutions, state):
                 indepSolutions.append(state[:])
