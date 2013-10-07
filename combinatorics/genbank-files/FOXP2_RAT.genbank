@@ -1,0 +1,158 @@
+LOCUS       FOXP2_RAT                710 aa                     UNK 20-APR-2010
+DEFINITION  RecName: Full=Forkhead box protein P2;
+ACCESSION   P0CF24
+VERSION     P0CF24
+DBLINK      EMBL:AC111321
+            EMBL:AC128862
+            EMBL:AC115440
+            EMBL:AC122630
+            IPI:IPI00959836
+            RefSeq:NP_001258033.1
+            RefSeq:XP_003753916.1
+            UniGene:Rn.134464
+            GeneID:500037
+            KEGG:rno:500037
+            UCSC:RGD:1559697
+            CTD:93986
+            RGD:1559697
+            KO:K09409
+            NextBio:704873
+            GO:GO:0005737
+            GO:GO:0005667
+            GO:GO:0003682
+            GO:GO:0008301
+            GO:GO:0003690
+            GO:GO:0046872
+            GO:GO:0046982
+            GO:GO:0042803
+            GO:GO:0003705
+            GO:GO:0043565
+            GO:GO:0008134
+            GO:GO:0043010
+            GO:GO:0021757
+            GO:GO:0021549
+            GO:GO:0021987
+            GO:GO:0009790
+            GO:GO:0040007
+            GO:GO:0048286
+            GO:GO:0007389
+            GO:GO:0060501
+            GO:GO:0002053
+            GO:GO:0009791
+            GO:GO:0021758
+            GO:GO:0051090
+            GO:GO:0060013
+            GO:GO:0007519
+            GO:GO:0048745
+            GO:GO:0042297
+            Gene3D:1.10.10.10
+            InterPro:IPR001766
+            InterPro:IPR018122
+            InterPro:IPR011991
+            InterPro:IPR015880
+            Pfam:PF00250
+            PRINTS:PR00053
+            SMART:SM00339
+            SMART:SM00355
+            PROSITE:PS00657
+            PROSITE:PS00658
+            PROSITE:PS50039
+            PROSITE:PS00028
+            PROSITE:PS50157
+KEYWORDS    Coiled coil; Complete proteome; DNA-binding; Metal-binding; Nucleus;
+            Reference proteome; Repressor; Transcription; Transcription
+            regulation; Zinc; Zinc-finger.
+SOURCE      .
+  ORGANISM  Rattus norvegicus (Rat)
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+            Sciurognathi; Muroidea; Muridae; Murinae; Rattus.
+REFERENCE   1
+  AUTHORS   Gibbs R.A., Weinstock G.M., Metzker M.L., Muzny D.M., Sodergren
+            E.J., Scherer S., Scott G., Steffen D., Worley K.C., Burch P.E.,
+            Okwuonu G., Hines S., Lewis L., Deramo C., Delgado O., Dugan-Rocha
+            S., Miner G., Morgan M., Hawes A., Gill R., Holt R.A., Adams M.D.,
+            Amanatides P.G., Baden-Tillson H., Barnstead M., Chin S., Evans
+            C.A., Ferriera S., Fosler C., Glodek A., Gu Z., Jennings D., Kraft
+            C.L., Nguyen T., Pfannkoch C.M., Sitter C., Sutton G.G., Venter
+            J.C., Woodage T., Smith D., Lee H.-M., Gustafson E., Cahill P., Kana
+            A., Doucette-Stamm L., Weinstock K., Fechtel K., Weiss R.B., Dunn
+            D.M., Green E.D., Blakesley R.W., Bouffard G.G., De Jong P.J.,
+            Osoegawa K., Zhu B., Marra M., Schein J., Bosdet I., Fjell C., Jones
+            S., Krzywinski M., Mathewson C., Siddiqui A., Wye N., McPherson J.,
+            Zhao S., Fraser C.M., Shetty J., Shatsman S., Geer K., Chen Y.,
+            Abramzon S., Nierman W.C., Havlak P.H., Chen R., Durbin K.J., Egan
+            A., Ren Y., Song X.-Z., Li B., Liu Y., Qin X., Cawley S., Cooney
+            A.J., D'Souza L.M., Martin K., Wu J.Q., Gonzalez-Garay M.L., Jackson
+            A.R., Kalafus K.J., McLeod M.P., Milosavljevic A., Virk D., Volkov
+            A., Wheeler D.A., Zhang Z., Bailey J.A., Eichler E.E., Tuzun E.,
+            Birney E., Mongin E., Ureta-Vidal A., Woodwark C., Zdobnov E., Bork
+            P., Suyama M., Torrents D., Alexandersson M., Trask B.J., Young
+            J.M., Huang H., Wang H., Xing H., Daniels S., Gietzen D., Schmidt
+            J., Stevens K., Vitt U., Wingrove J., Camara F., Mar Alba M., Abril
+            J.F., Guigo R., Smit A., Dubchak I., Rubin E.M., Couronne O.,
+            Poliakov A., Huebner N., Ganten D., Goesele C., Hummel O., Kreitler
+            T., Lee Y.-A., Monti J., Schulz H., Zimdahl H., Himmelbauer H.,
+            Lehrach H., Jacob H.J., Bromberg S., Gullings-Handley J.,
+            Jensen-Seaman M.I., Kwitek A.E., Lazar J., Pasko D., Tonellato P.J.,
+            Twigger S., Ponting C.P., Duarte J.M., Rice S., Goodstadt L.,
+            Beatson S.A., Emes R.D., Winter E.E., Webber C., Brandt P.,
+            Nyakatura G., Adetobi M., Chiaromonte F., Elnitski L., Eswara P.,
+            Hardison R.C., Hou M., Kolbe D., Makova K., Miller W., Nekrutenko
+            A., Riemer C., Schwartz S., Taylor J., Yang S., Zhang Y.,
+            Lindpaintner K., Andrews T.D., Caccamo M., Clamp M., Clarke L.,
+            Curwen V., Durbin R.M., Eyras E., Searle S.M., Cooper G.M.,
+            Batzoglou S., Brudno M., Sidow A., Stone E.A., Payseur B.A., Bourque
+            G., Lopez-Otin C., Puente X.S., Chakrabarti K., Chatterji S., Dewey
+            C., Pachter L., Bray N., Yap V.B., Caspi A., Tesler G., Pevzner
+            P.A., Haussler D., Roskin K.M., Baertsch R., Clawson H., Furey T.S.,
+            Hinrichs A.S., Karolchik D., Kent W.J., Rosenbloom K.R., Trumbower
+            H., Weirauch M., Cooper D.N., Stenson P.D., Ma B., Brent M.,
+            Arumugam M., Shteynberg D., Copley R.R., Taylor M.S., Riethman H.,
+            Mudunuri U., Peterson J., Guyer M., Felsenfeld A., Old S., Mockrin
+            S., Collins F.S.
+  TITLE     Genome sequence of the Brown Norway rat yields insights into
+            mammalian evolution.
+  JOURNAL   Nature 428:493-521(2004).
+   PUBMED   15057822
+  REMARK    STRAIN=Brown Norway;
+COMMENT     FUNCTION: Transcriptional repressor that may play a role in the
+            specification and differentiation of lung epithelium. May also play
+            a role in developing neural, gastrointestinal and cardiovascular
+            tissues. Can act with CTBP1 to synergistically repress transcription
+            but CTPBP1 is not essential (By similarity).
+            SUBUNIT: Forms homodimers and heterodimers with FOXP1 and FOXP4.
+            Dimerization is required for DNA-binding. Interacts with CTBP1 (By
+            similarity).
+            SUBCELLULAR LOCATION: Nucleus (Probable).
+            DOMAIN: The leucine-zipper is required for dimerization and
+            transcriptional repression (By similarity).
+            SIMILARITY: Contains 1 C2H2-type zinc finger.
+            SIMILARITY: Contains 1 fork-head DNA-binding domain.
+FEATURES             Location/Qualifiers
+     CHAIN           1..710
+                     /description="Forkhead box protein P2."
+     ZN_FING         343..366
+                     /description="C2H2-type."
+     DNA_BIND        499..589
+                     /description="Fork-head."
+     REGION          383..404
+                     /description="Leucine-zipper."
+     REGION          417..421
+                     /description="CTBP1-binding (By similarity)."
+     COMPBIAS        53..263
+                     /description="Gln-rich."
+ORIGIN
+        1 mmqesateti snssmnqngm stlssqldag srdgrssgdt ssevstvell hlqqqqalqa
+       61 arqlllqqqt sglkspkssd kqrplqvpvs vammtpqvit pqqmqqilqq qvlspqqlqa
+      121 llqqqqavml qqqqlqefyk kqqeqlhlql lqqqqqqqqq qqqqqqqqqq qqqqqqqqqq
+      181 qqqqqqqhpg kqakeqqqqq qqqqlaaqql vfqqqllqmq qlqqqqhlls lqcqglisip
+      241 pgqaalpvqs lpqaglspae iqqlwkevtg vhsqedngik hggldlttnn sssttsstts
+      301 kasppithhs ivngqssvln arrdssshee tgashtlygh gvckwpgces icedfgqflk
+      361 hlnnehaldd rstaqcrvqm qvvqqleiql skererlqam mthlhmrpse pkpspkplnl
+      421 vssvtmsknm letspqslpq tpttptapvt pitqgpsvit pasvpnvgai rrrhsdkyni
+      481 pmsseiapny efyknadvrp pftyatlirq aimessdrql tlneiyswft rtfayfrrna
+      541 atwknavrhn lslhkcfvrv envkgavwtv deveyqkrrs qkitgsptlv kniptslgyg
+      601 aalnaslqaa laesslplls npglinnass gllqavhedl ngsldhidsn gnsspgcspq
+      661 phihsihvke epviaededc pmslvttanh speleddrei eeeplsedle
+//

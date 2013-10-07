@@ -1,0 +1,247 @@
+LOCUS       FOXP2_MOUSE              714 aa                     UNK 05-DEC-2001
+DEFINITION  RecName: Full=Forkhead box protein P2;
+ACCESSION   P58463
+VERSION     P58463
+DBLINK      EMBL:AF339106
+            EMBL:AY079003
+            EMBL:AK082361
+            EMBL:BC058960
+            EMBL:BC062926
+            IPI:IPI00276962
+            IPI:IPI00463757
+            RefSeq:NP_444472.2
+            RefSeq:NP_997600.1
+            UniGene:Mm.332919
+            ProteinModelPortal:P58463
+            SMR:P58463
+            PhosphoSite:P58463
+            PRIDE:P58463
+            Ensembl:ENSMUST00000031545
+            Ensembl:ENSMUST00000115472
+            Ensembl:ENSMUST00000115477
+            GeneID:114142
+            KEGG:mmu:114142
+            UCSC:uc009ayy.1
+            CTD:93986
+            MGI:MGI:2148705
+            eggNOG:COG5025
+            GeneTree:ENSGT00720000108448
+            HOGENOM:HOG000092089
+            HOVERGEN:HBG051657
+            KO:K09409
+            OrthoDB:EOG402WS7
+            ChiTaRS:FOXP2
+            NextBio:368137
+            ArrayExpress:P58463
+            Bgee:P58463
+            CleanEx:MM_FOXP2
+            Genevestigator:P58463
+            GO:GO:0005737
+            GO:GO:0005667
+            GO:GO:0003682
+            GO:GO:0008301
+            GO:GO:0003690
+            GO:GO:0046872
+            GO:GO:0042803
+            GO:GO:0003705
+            GO:GO:0043565
+            GO:GO:0008134
+            GO:GO:0043010
+            GO:GO:0021757
+            GO:GO:0021549
+            GO:GO:0021987
+            GO:GO:0009790
+            GO:GO:0040007
+            GO:GO:0048286
+            GO:GO:0000122
+            GO:GO:0007389
+            GO:GO:0060501
+            GO:GO:0002053
+            GO:GO:0009791
+            GO:GO:0021758
+            GO:GO:0051090
+            GO:GO:0060013
+            GO:GO:0007519
+            GO:GO:0048745
+            GO:GO:0042297
+            Gene3D:1.10.10.10
+            InterPro:IPR001766
+            InterPro:IPR018122
+            InterPro:IPR011991
+            InterPro:IPR015880
+            Pfam:PF00250
+            PRINTS:PR00053
+            SMART:SM00339
+            SMART:SM00355
+            PROSITE:PS00657
+            PROSITE:PS00658
+            PROSITE:PS50039
+            PROSITE:PS00028
+            PROSITE:PS50157
+KEYWORDS    Alternative splicing; Complete proteome; DNA-binding; Metal-binding;
+            Nucleus; Reference proteome; Repressor; Transcription; Transcription
+            regulation; Zinc; Zinc-finger.
+SOURCE      .
+  ORGANISM  Mus musculus (Mouse)
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+            Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
+REFERENCE   1
+  AUTHORS   Shu W., Yang H., Zhang L., Lu M.M., Morrisey E.E.
+  TITLE     Characterization of a new subfamily of winged-helix/forkhead (Fox)
+            genes that are expressed in the lung and act as transcriptional
+            repressors.
+  JOURNAL   J. Biol. Chem. 276:27488-27497(2001).
+   PUBMED   11358962
+  REMARK    STRAIN=C57BL/6; TISSUE=Lung;
+REFERENCE   2
+  AUTHORS   Enard W., Przeworski M., Fisher S.E., Lai C.S.L., Wiebe V., Kitano
+            T., Monaco A.P., Paeaebo S.
+  TITLE     Molecular evolution of FOXP2, a gene involved in speech and
+            language.
+  JOURNAL   Nature 418:869-872(2002).
+   PUBMED   12192408
+  REMARK    STRAIN=BALB/c;
+REFERENCE   3
+  AUTHORS   Carninci P., Kasukawa T., Katayama S., Gough J., Frith M.C., Maeda
+            N., Oyama R., Ravasi T., Lenhard B., Wells C., Kodzius R., Shimokawa
+            K., Bajic V.B., Brenner S.E., Batalov S., Forrest A.R., Zavolan M.,
+            Davis M.J., Wilming L.G., Aidinis V., Allen J.E., Ambesi-Impiombato
+            A., Apweiler R., Aturaliya R.N., Bailey T.L., Bansal M., Baxter L.,
+            Beisel K.W., Bersano T., Bono H., Chalk A.M., Chiu K.P., Choudhary
+            V., Christoffels A., Clutterbuck D.R., Crowe M.L., Dalla E.,
+            Dalrymple B.P., de Bono B., Della Gatta G., di Bernardo D., Down T.,
+            Engstrom P., Fagiolini M., Faulkner G., Fletcher C.F., Fukushima T.,
+            Furuno M., Futaki S., Gariboldi M., Georgii-Hemming P., Gingeras
+            T.R., Gojobori T., Green R.E., Gustincich S., Harbers M., Hayashi
+            Y., Hensch T.K., Hirokawa N., Hill D., Huminiecki L., Iacono M.,
+            Ikeo K., Iwama A., Ishikawa T., Jakt M., Kanapin A., Katoh M.,
+            Kawasawa Y., Kelso J., Kitamura H., Kitano H., Kollias G., Krishnan
+            S.P., Kruger A., Kummerfeld S.K., Kurochkin I.V., Lareau L.F.,
+            Lazarevic D., Lipovich L., Liu J., Liuni S., McWilliam S., Madan
+            Babu M., Madera M., Marchionni L., Matsuda H., Matsuzawa S., Miki
+            H., Mignone F., Miyake S., Morris K., Mottagui-Tabar S., Mulder N.,
+            Nakano N., Nakauchi H., Ng P., Nilsson R., Nishiguchi S., Nishikawa
+            S., Nori F., Ohara O., Okazaki Y., Orlando V., Pang K.C., Pavan
+            W.J., Pavesi G., Pesole G., Petrovsky N., Piazza S., Reed J., Reid
+            J.F., Ring B.Z., Ringwald M., Rost B., Ruan Y., Salzberg S.L.,
+            Sandelin A., Schneider C., Schoenbach C., Sekiguchi K., Semple C.A.,
+            Seno S., Sessa L., Sheng Y., Shibata Y., Shimada H., Shimada K.,
+            Silva D., Sinclair B., Sperling S., Stupka E., Sugiura K., Sultana
+            R., Takenaka Y., Taki K., Tammoja K., Tan S.L., Tang S., Taylor
+            M.S., Tegner J., Teichmann S.A., Ueda H.R., van Nimwegen E., Verardo
+            R., Wei C.L., Yagi K., Yamanishi H., Zabarovsky E., Zhu S., Zimmer
+            A., Hide W., Bult C., Grimmond S.M., Teasdale R.D., Liu E.T., Brusic
+            V., Quackenbush J., Wahlestedt C., Mattick J.S., Hume D.A., Kai C.,
+            Sasaki D., Tomaru Y., Fukuda S., Kanamori-Katayama M., Suzuki M.,
+            Aoki J., Arakawa T., Iida J., Imamura K., Itoh M., Kato T., Kawaji
+            H., Kawagashira N., Kawashima T., Kojima M., Kondo S., Konno H.,
+            Nakano K., Ninomiya N., Nishio T., Okada M., Plessy C., Shibata K.,
+            Shiraki T., Suzuki S., Tagami M., Waki K., Watahiki A., Okamura-Oho
+            Y., Suzuki H., Kawai J., Hayashizaki Y.
+  TITLE     The transcriptional landscape of the mammalian genome.
+  JOURNAL   Science 309:1559-1563(2005).
+   PUBMED   16141072
+  REMARK    STRAIN=C57BL/6J; TISSUE=Cerebellum;
+REFERENCE   4
+  AUTHORS   The MGC Project Team
+  TITLE     The status, quality, and expansion of the NIH full-length cDNA
+            project: the Mammalian Gene Collection (MGC).
+  JOURNAL   Genome Res. 14:2121-2127(2004).
+   PUBMED   15489334
+  REMARK    STRAIN=C57BL/6; TISSUE=Brain;
+REFERENCE   5
+  AUTHORS   Lu M.M., Li S., Yang H., Morrisey E.E.
+  TITLE     Foxp4: a novel member of the Foxp subfamily of winged-helix genes
+            co- expressed with Foxp1 and Foxp2 in pulmonary and gut tissues.
+  JOURNAL   Mech. Dev. 119:S197-S202(2002).
+   PUBMED   14516685
+REFERENCE   6
+  AUTHORS   Li S., Weidenfeld J., Morrisey E.E.
+  TITLE     Transcriptional and DNA binding activity of the Foxp1/2/4 family is
+            modulated by heterotypic and homotypic protein interactions.
+  JOURNAL   Mol. Cell. Biol. 24:809-822(2004).
+   PUBMED   14701752
+COMMENT     FUNCTION: Transcriptional repressor that may play a role in the
+            specification and differentiation of lung epithelium. May also play
+            a role in developing neural, gastrointestinal and cardiovascular
+            tissues. Can act with CTBP1 to synergistically repress transcription
+            but CTPBP1 is not essential.
+            SUBUNIT: Forms homodimers and heterodimers with FOXP1 and FOXP4.
+            Dimerization is required for DNA-binding. Interacts with CTBP1.
+            SUBCELLULAR LOCATION: Nucleus (Probable).
+            ALTERNATIVE PRODUCTS: Event=Alternative splicing; Named isoforms=2;
+            Name=1; IsoId=P58463-1; Sequence=Displayed; Name=2; IsoId=P58463-2;
+            Sequence=VSP_011540; Note=May be due to a competing acceptor splice
+            site. No experimental confirmation available;
+            TISSUE SPECIFICITY: Highest expression in lung. Lower expression in
+            spleen, skeletal muscle, brain, kidney and small intestine.
+            DEVELOPMENTAL STAGE: Expressed in developing lung, neural,
+            intestinal and cardiovascular tissues. Expressed at a high level in
+            the distal airway epithelium and at a low level in the proximal
+            airway epithelium at 12.5 dpc, and restricted to the distal airway
+            epithelium by 14.5 dpc. In the spinal cord, at 12.5 dpc, expressed
+            in a subset of interneurons dorsal to motor neurons. At 16.5 dpc,
+            expression in the brain is observed in the inner intermediate zone
+            of the neopallial cortex and in the developing cerebral hemispheres.
+            In the gastrointestinal system, at 12.5 expressed in the outer
+            mesodermal layer and in the intestinal epithelium. By 16.5 dpc,
+            expression is restricted to the outer longitudinal muscle layer of
+            the intestine and stomach. In the cardiovascular system, at 14.5
+            dpc, expressed in the outflow tract region of the developing heart.
+            By 16.5 dpc, observed in the outflow tract and atrium, but not in
+            the ventricles.
+            DOMAIN: The leucine-zipper is required for dimerization and
+            transcriptional repression.
+            SIMILARITY: Contains 1 C2H2-type zinc finger.
+            SIMILARITY: Contains 1 fork-head DNA-binding domain.
+FEATURES             Location/Qualifiers
+     CHAIN           1..714
+                     /description="Forkhead box protein P2."
+     ZN_FING         345..370
+                     /description="C2H2-type."
+     DNA_BIND        503..593
+                     /description="Fork-head."
+     REGION          387..408
+                     /description="Leucine-zipper."
+     REGION          421..425
+                     /description="CTBP1-binding."
+     COMPBIAS        53..267
+                     /description="Gln-rich."
+     VAR_SEQ         134..154
+                     /description="Missing (in isoform 2)."
+     MUTAGEN         399
+                     /description="Missing: Loss of dimerization. Almost
+                     complete loss of DNA-binding. Reduced transcriptional
+                     repression activity."
+     MUTAGEN         407..408
+                     /description="HL->AA: Severely reduced transcriptional
+                     repression activity."
+     MUTAGEN         408
+                     /description="L->A: Severely reduced transcriptional
+                     repression activity."
+     MUTAGEN         421..425
+                     /description="PLNLV->AANAA: No significant effect on
+                     transcriptional repression activity."
+     CONFLICT        6
+                     /description="A -> V (in Ref. 1; AAK69651)."
+     CONFLICT        543
+                     /description="N -> S (in Ref. 1; AAK69651)."
+     CONFLICT        663
+                     /description="P -> R (in Ref. 3; BAC38477)."
+     CONFLICT        675
+                     /description="E -> D (in Ref. 3; BAC38477)."
+ORIGIN
+        1 mmqesateti snssmnqngm stlssqldag srdgrssgdt ssevstvell hlqqqqalqa
+       61 arqlllqqqt sglkspksse kqrplqvpvs vammtpqvit pqqmqqilqq qvlspqqlqa
+      121 llqqqqavml qqqqlqefyk kqqeqlhlql lqqqqqqqqq qqqqqqqqqq qqqqqqqqqq
+      181 qqqqqqqqqq qhpgkqakeq qqqqqqqqla aqqlvfqqql lqmqqlqqqq hllslqrqgl
+      241 isippgqaal pvqslpqagl spaeiqqlwk evtgvhsmed ngikhggldl ttnnssstts
+      301 sttskasppi thhsivngqs svlnarrdss sheetgasht lyghgvckwp gcesicedfg
+      361 qflkhlnneh alddrstaqc rvqmqvvqql eiqlskerer lqammthlhm rpsepkpspk
+      421 plnlvssvtm sknmletspq slpqtpttpt apvtpitqgp svitpasvpn vgairrrhsd
+      481 kynipmssei apnyefykna dvrppftyat lirqaimess drqltlneiy swftrtfayf
+      541 rrnaatwkna vrhnlslhkc fvrvenvkga vwtvdeveyq krrsqkitgs ptlvknipts
+      601 lgygaalnas lqaalaessl pllsnpglin nassgllqav hedlngsldh idsngnsspg
+      661 cspqphihsi hvkeepviae dedcpmslvt tanhspeled dreieeepls edle
+//

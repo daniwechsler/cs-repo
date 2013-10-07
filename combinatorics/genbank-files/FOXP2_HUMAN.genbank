@@ -1,0 +1,436 @@
+LOCUS       FOXP2_HUMAN              715 aa                     UNK 05-DEC-2001
+DEFINITION  RecName: Full=Forkhead box protein P2; AltName: Full=CAG repeat
+            protein 44; AltName: Full=Trinucleotide repeat-containing gene 10
+            protein;
+ACCESSION   O15409
+VERSION     O15409
+DBLINK      EMBL:AF337817
+            EMBL:AF467252
+            EMBL:AF467253
+            EMBL:AF467254
+            EMBL:AF467255
+            EMBL:AF467256
+            EMBL:AF467257
+            EMBL:AF493430
+            EMBL:AY144615
+            EMBL:AK131266
+            EMBL:AK296957
+            EMBL:AC003992
+            EMBL:AC020606
+            EMBL:AC073626
+            EMBL:AC074000
+            EMBL:AC092148
+            EMBL:AC092606
+            EMBL:CH236947
+            EMBL:CH471070
+            EMBL:BC126104
+            EMBL:BC143866
+            EMBL:U80741
+            EMBL:AF515031
+            EMBL:AF515032
+            EMBL:AF515033
+            EMBL:AF515034
+            EMBL:AF515035
+            EMBL:AF515036
+            EMBL:AF515037
+            EMBL:AF515038
+            EMBL:AF515039
+            EMBL:AF515040
+            EMBL:AF515041
+            EMBL:AF515042
+            EMBL:AF515043
+            EMBL:AF515044
+            EMBL:AF515045
+            EMBL:AF515046
+            EMBL:AF515047
+            EMBL:AF515048
+            EMBL:AF515049
+            EMBL:AF515050
+            IPI:IPI00215632
+            IPI:IPI00288960
+            IPI:IPI00382947
+            IPI:IPI00383604
+            IPI:IPI00454591
+            IPI:IPI00454592
+            IPI:IPI00879217
+            IPI:IPI00940557
+            RefSeq:NP_001166237.1
+            RefSeq:NP_001166238.1
+            RefSeq:NP_055306.1
+            RefSeq:NP_683696.2
+            RefSeq:NP_683697.2
+            RefSeq:NP_683698.2
+            UniGene:Hs.282787
+            PDB:2A07
+            PDB:2AS5
+            PDBsum:2A07
+            PDBsum:2AS5
+            ProteinModelPortal:O15409
+            SMR:O15409
+            DIP:DIP-29004N
+            IntAct:O15409
+            PhosphoSite:O15409
+            PaxDb:O15409
+            PRIDE:O15409
+            Ensembl:ENST00000350908
+            Ensembl:ENST00000360232
+            Ensembl:ENST00000378237
+            Ensembl:ENST00000393489
+            Ensembl:ENST00000393494
+            Ensembl:ENST00000403559
+            Ensembl:ENST00000408937
+            Ensembl:ENST00000412402
+            Ensembl:ENST00000441290
+            GeneID:93986
+            KEGG:hsa:93986
+            UCSC:uc003vgv.1
+            CTD:93986
+            GeneCards:GC07P113649
+            HGNC:HGNC:13875
+            HPA:CAB011488
+            HPA:HPA000382
+            HPA:HPA000383
+            MIM:602081
+            MIM:605317
+            neXtProt:NX_O15409
+            Orphanet:251061
+            Orphanet:209908
+            PharmGKB:PA28242
+            eggNOG:COG5025
+            HOGENOM:HOG000092089
+            HOVERGEN:HBG051657
+            KO:K09409
+            OMA:PETKLCV
+            OrthoDB:EOG402WS7
+            PhylomeDB:O15409
+            ChiTaRS:FOXP2
+            EvolutionaryTrace:O15409
+            GeneWiki:FOXP2
+            GenomeRNAi:93986
+            NextBio:78260
+            ArrayExpress:O15409
+            Bgee:O15409
+            Genevestigator:O15409
+            GO:GO:0005737
+            GO:GO:0005667
+            GO:GO:0003682
+            GO:GO:0008301
+            GO:GO:0003690
+            GO:GO:0046872
+            GO:GO:0046982
+            GO:GO:0042803
+            GO:GO:0003705
+            GO:GO:0043565
+            GO:GO:0008134
+            GO:GO:0043010
+            GO:GO:0021757
+            GO:GO:0021549
+            GO:GO:0021987
+            GO:GO:0009790
+            GO:GO:0040007
+            GO:GO:0048286
+            GO:GO:0000122
+            GO:GO:0045892
+            GO:GO:0007389
+            GO:GO:0060501
+            GO:GO:0002053
+            GO:GO:0009791
+            GO:GO:0021758
+            GO:GO:0051090
+            GO:GO:0060013
+            GO:GO:0007519
+            GO:GO:0048745
+            GO:GO:0042297
+            Gene3D:1.10.10.10
+            InterPro:IPR001766
+            InterPro:IPR018122
+            InterPro:IPR011991
+            InterPro:IPR015880
+            Pfam:PF00250
+            PRINTS:PR00053
+            SMART:SM00339
+            SMART:SM00355
+            PROSITE:PS00657
+            PROSITE:PS00658
+            PROSITE:PS50039
+            PROSITE:PS00028
+            PROSITE:PS50157
+KEYWORDS    3D-structure; Alternative splicing; Chromosomal rearrangement;
+            Complete proteome; Disease mutation; DNA-binding; Metal-binding;
+            Nucleus; Reference proteome; Repressor; Transcription; Transcription
+            regulation; Zinc; Zinc-finger.
+SOURCE      .
+  ORGANISM  Homo sapiens (Human)
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Lai C.S.L., Fisher S.E., Hurst J.A., Vargha-Khadem F., Monaco A.P.
+  TITLE     A forkhead-domain gene is mutated in a severe speech and language
+            disorder.
+  JOURNAL   Nature 413:519-523(2001).
+   PUBMED   11586359
+REFERENCE   2
+  AUTHORS   Bruce H.A., Margolis R.L.
+  TITLE     FOXP2: novel exons, splice variants, and CAG repeat length
+            stability.
+  JOURNAL   Hum. Genet. 111:136-144(2002).
+   PUBMED   12189486
+  REMARK    TISSUE=Brain, Corpus striatum, Fetal brain, and Frontal cortex;
+REFERENCE   3
+  AUTHORS   Vincent J.B., Scherer S.W.
+  JOURNAL   Submitted (MAR-2002) to the EMBL/GenBank/DDBJ databases.
+REFERENCE   4
+  AUTHORS   Guo J.H., Chen L., Yu L.
+  JOURNAL   Submitted (AUG-2002) to the EMBL/GenBank/DDBJ databases.
+  REMARK    TISSUE=Brain;
+REFERENCE   5
+  AUTHORS   Ota T., Suzuki Y., Nishikawa T., Otsuki T., Sugiyama T., Irie R.,
+            Wakamatsu A., Hayashi K., Sato H., Nagai K., Kimura K., Makita H.,
+            Sekine M., Obayashi M., Nishi T., Shibahara T., Tanaka T., Ishii S.,
+            Yamamoto J., Saito K., Kawai Y., Isono Y., Nakamura Y., Nagahari K.,
+            Murakami K., Yasuda T., Iwayanagi T., Wagatsuma M., Shiratori A.,
+            Sudo H., Hosoiri T., Kaku Y., Kodaira H., Kondo H., Sugawara M.,
+            Takahashi M., Kanda K., Yokoi T., Furuya T., Kikkawa E., Omura Y.,
+            Abe K., Kamihara K., Katsuta N., Sato K., Tanikawa M., Yamazaki M.,
+            Ninomiya K., Ishibashi T., Yamashita H., Murakawa K., Fujimori K.,
+            Tanai H., Kimata M., Watanabe M., Hiraoka S., Chiba Y., Ishida S.,
+            Ono Y., Takiguchi S., Watanabe S., Yosida M., Hotuta T., Kusano J.,
+            Kanehori K., Takahashi-Fujii A., Hara H., Tanase T.-O., Nomura Y.,
+            Togiya S., Komai F., Hara R., Takeuchi K., Arita M., Imose N.,
+            Musashino K., Yuuki H., Oshima A., Sasaki N., Aotsuka S., Yoshikawa
+            Y., Matsunawa H., Ichihara T., Shiohata N., Sano S., Moriya S.,
+            Momiyama H., Satoh N., Takami S., Terashima Y., Suzuki O., Nakagawa
+            S., Senoh A., Mizoguchi H., Goto Y., Shimizu F., Wakebe H.,
+            Hishigaki H., Watanabe T., Sugiyama A., Takemoto M., Kawakami B.,
+            Yamazaki M., Watanabe K., Kumagai A., Itakura S., Fukuzumi Y.,
+            Fujimori Y., Komiyama M., Tashiro H., Tanigami A., Fujiwara T., Ono
+            T., Yamada K., Fujii Y., Ozaki K., Hirao M., Ohmori Y., Kawabata A.,
+            Hikiji T., Kobatake N., Inagaki H., Ikema Y., Okamoto S., Okitani
+            R., Kawakami T., Noguchi S., Itoh T., Shigeta K., Senba T.,
+            Matsumura K., Nakajima Y., Mizuno T., Morinaga M., Sasaki M.,
+            Togashi T., Oyama M., Hata H., Watanabe M., Komatsu T.,
+            Mizushima-Sugano J., Satoh T., Shirai Y., Takahashi Y., Nakagawa K.,
+            Okumura K., Nagase T., Nomura N., Kikuchi H., Masuho Y., Yamashita
+            R., Nakai K., Yada T., Nakamura Y., Ohara O., Isogai T., Sugano S.
+  TITLE     Complete sequencing and characterization of 21,243 full-length human
+            cDNAs.
+  JOURNAL   Nat. Genet. 36:40-45(2004).
+   PUBMED   14702039
+  REMARK    TISSUE=Tongue;
+REFERENCE   6
+  AUTHORS   Hillier L.W., Fulton R.S., Fulton L.A., Graves T.A., Pepin K.H.,
+            Wagner-McPherson C., Layman D., Maas J., Jaeger S., Walker R., Wylie
+            K., Sekhon M., Becker M.C., O'Laughlin M.D., Schaller M.E., Fewell
+            G.A., Delehaunty K.D., Miner T.L., Nash W.E., Cordes M., Du H., Sun
+            H., Edwards J., Bradshaw-Cordum H., Ali J., Andrews S., Isak A.,
+            Vanbrunt A., Nguyen C., Du F., Lamar B., Courtney L., Kalicki J.,
+            Ozersky P., Bielicki L., Scott K., Holmes A., Harkins R., Harris A.,
+            Strong C.M., Hou S., Tomlinson C., Dauphin-Kohlberg S.,
+            Kozlowicz-Reilly A., Leonard S., Rohlfing T., Rock S.M., Tin-Wollam
+            A.-M., Abbott A., Minx P., Maupin R., Strowmatt C., Latreille P.,
+            Miller N., Johnson D., Murray J., Woessner J.P., Wendl M.C., Yang
+            S.-P., Schultz B.R., Wallis J.W., Spieth J., Bieri T.A., Nelson
+            J.O., Berkowicz N., Wohldmann P.E., Cook L.L., Hickenbotham M.T.,
+            Eldred J., Williams D., Bedell J.A., Mardis E.R., Clifton S.W.,
+            Chissoe S.L., Marra M.A., Raymond C., Haugen E., Gillett W., Zhou
+            Y., James R., Phelps K., Iadanoto S., Bubb K., Simms E., Levy R.,
+            Clendenning J., Kaul R., Kent W.J., Furey T.S., Baertsch R.A., Brent
+            M.R., Keibler E., Flicek P., Bork P., Suyama M., Bailey J.A.,
+            Portnoy M.E., Torrents D., Chinwalla A.T., Gish W.R., Eddy S.R.,
+            McPherson J.D., Olson M.V., Eichler E.E., Green E.D., Waterston
+            R.H., Wilson R.K.
+  TITLE     The DNA sequence of human chromosome 7.
+  JOURNAL   Nature 424:157-164(2003).
+   PUBMED   12853948
+REFERENCE   7
+  AUTHORS   Scherer S.W., Cheung J., MacDonald J.R., Osborne L.R., Nakabayashi
+            K., Herbrick J.-A., Carson A.R., Parker-Katiraee L., Skaug J., Khaja
+            R., Zhang J., Hudek A.K., Li M., Haddad M., Duggan G.E., Fernandez
+            B.A., Kanematsu E., Gentles S., Christopoulos C.C., Choufani S.,
+            Kwasnicka D., Zheng X.H., Lai Z., Nusskern D.R., Zhang Q., Gu Z., Lu
+            F., Zeesman S., Nowaczyk M.J., Teshima I., Chitayat D., Shuman C.,
+            Weksberg R., Zackai E.H., Grebe T.A., Cox S.R., Kirkpatrick S.J.,
+            Rahman N., Friedman J.M., Heng H.H.Q., Pelicci P.G., Lo-Coco F.,
+            Belloni E., Shaffer L.G., Pober B., Morton C.C., Gusella J.F., Bruns
+            G.A.P., Korf B.R., Quade B.J., Ligon A.H., Ferguson H., Higgins
+            A.W., Leach N.T., Herrick S.R., Lemyre E., Farra C.G., Kim H.-G.,
+            Summers A.M., Gripp K.W., Roberts W., Szatmari P., Winsor E.J.T.,
+            Grzeschik K.-H., Teebi A., Minassian B.A., Kere J., Armengol L.,
+            Pujana M.A., Estivill X., Wilson M.D., Koop B.F., Tosi S., Moore
+            G.E., Boright A.P., Zlotorynski E., Kerem B., Kroisel P.M., Petek
+            E., Oscier D.G., Mould S.J., Doehner H., Doehner K., Rommens J.M.,
+            Vincent J.B., Venter J.C., Li P.W., Mural R.J., Adams M.D., Tsui
+            L.-C.
+  TITLE     Human chromosome 7: DNA sequence and biology.
+  JOURNAL   Science 300:767-772(2003).
+   PUBMED   12690205
+REFERENCE   8
+  AUTHORS   Mural R.J., Istrail S., Sutton G.G., Florea L., Halpern A.L.,
+            Mobarry C.M., Lippert R., Walenz B., Shatkay H., Dew I., Miller
+            J.R., Flanigan M.J., Edwards N.J., Bolanos R., Fasulo D.,
+            Halldorsson B.V., Hannenhalli S., Turner R., Yooseph S., Lu F.,
+            Nusskern D.R., Shue B.C., Zheng X.H., Zhong F., Delcher A.L., Huson
+            D.H., Kravitz S.A., Mouchard L., Reinert K., Remington K.A., Clark
+            A.G., Waterman M.S., Eichler E.E., Adams M.D., Hunkapiller M.W.,
+            Myers E.W., Venter J.C.
+  JOURNAL   Submitted (SEP-2005) to the EMBL/GenBank/DDBJ databases.
+REFERENCE   9
+  AUTHORS   The MGC Project Team
+  TITLE     The status, quality, and expansion of the NIH full-length cDNA
+            project: the Mammalian Gene Collection (MGC).
+  JOURNAL   Genome Res. 14:2121-2127(2004).
+   PUBMED   15489334
+  REMARK    TISSUE=Brain;
+REFERENCE   10
+  AUTHORS   Margolis R.L., Abraham M.R., Gatchell S.B., Li S.-H., Kidwai A.S.,
+            Breschel T.S., Stine O.C., Callahan C., McInnis M.G., Ross C.A.
+  TITLE     cDNAs with long CAG trinucleotide repeats from human brain.
+  JOURNAL   Hum. Genet. 100:114-122(1997).
+   PUBMED   9225980
+  REMARK    TISSUE=Brain cortex;
+REFERENCE   11
+  AUTHORS   Enard W., Przeworski M., Fisher S.E., Lai C.S.L., Wiebe V., Kitano
+            T., Monaco A.P., Paeaebo S.
+  TITLE     Molecular evolution of FOXP2, a gene involved in speech and
+            language.
+  JOURNAL   Nature 418:869-872(2002).
+   PUBMED   12192408
+REFERENCE   12
+  AUTHORS   Teramitsu I., Kudo L.C., London S.E., Geschwind D.H., White S.A.
+  TITLE     Parallel FoxP1 and FoxP2 expression in songbird and human brain
+            predicts functional interaction.
+  JOURNAL   J. Neurosci. 24:3152-3163(2004).
+   PUBMED   15056695
+COMMENT     FUNCTION: Transcriptional repressor that may play a role in the
+            specification and differentiation of lung epithelium. May also play
+            a role in developing neural, gastrointestinal and cardiovascular
+            tissues. Can act with CTBP1 to synergistically repress transcription
+            but CTPBP1 is not essential. Involved in neural mechanisms mediating
+            the development of speech and language.
+            SUBUNIT: Forms homodimers and heterodimers with FOXP1 and FOXP4.
+            Dimerization is required for DNA-binding. Interacts with CTBP1 (By
+            similarity).
+            SUBCELLULAR LOCATION: Nucleus (Probable).
+            ALTERNATIVE PRODUCTS: Event=Alternative splicing; Named isoforms=9;
+            Name=1; Synonyms=I; IsoId=O15409-1; Sequence=Displayed; Name=2;
+            Synonyms=II; IsoId=O15409-3; Sequence=Not described; Name=3;
+            Synonyms=III, IV; IsoId=O15409-2; Sequence=VSP_001558; Name=4;
+            IsoId=O15409-4; Sequence=VSP_011532; Name=5; IsoId=O15409-5;
+            Sequence=VSP_011532, VSP_011535, VSP_011536; Name=6;
+            Synonyms=FOXP2-S; IsoId=O15409-6; Sequence=VSP_011538, VSP_011539;
+            Name=7; IsoId=O15409-7; Sequence=VSP_011537; Name=8; IsoId=O15409-8;
+            Sequence=VSP_011533, VSP_011534; Note=No experimental confirmation
+            available; Name=9; IsoId=O15409-9; Sequence=VSP_043464; Note=No
+            experimental confirmation available;
+            TISSUE SPECIFICITY: Isoform 1 and isoform 6 are expressed in adult
+            and fetal brain, caudate nucleus and lung.
+            DEVELOPMENTAL STAGE: Expressed in the brain at 15 and 22 weeks of
+            gestation, with a pattern of strong cortical, basal ganglia,
+            thalamic and cerebellar expression. Highly expressed in the head and
+            tail of nucleus caudatus and putamen. Restricted expression within
+            the globus pallidus, with high levels in the pars interna, which
+            provides the principal source of output from the basal ganglia to
+            the nucleus centrum medianum thalami (CM) and the major motor relay
+            nuclei of the thalamus. In the thalamus, present in the CM and
+            nucleus medialis dorsalis thalami. Lower levels are observed in the
+            nuclei anterior thalami, dorsal and ventral, and the nucleus
+            parafascicularis thalami. Expressed in the ventrobasal complex
+            comprising the nucleus ventralis posterior lateralis/medialis. The
+            ventral tier of the thalamus exhibits strong expression, including
+            nuclei ventralis anterior, lateralis and posterior lateralis pars
+            oralis. Also expressed in the nucleus subthalamicus bilaterally and
+            in the nucleus ruber.
+            DOMAIN: The leucine-zipper is required for dimerization and
+            transcriptional repression (By similarity).
+            DISEASE: Speech-language disorder 1 (SPCH1) [MIM:602081]: A disorder
+            characterized by severe orofacial dyspraxia resulting in largely
+            incomprehensible speech. Affected individuals have severe impairment
+            in the selection and sequencing of fine orofacial movements which
+            are necessary for articulation, and deficits in several facets of
+            grammatical skills and language processing, such as the ability to
+            break up words into their constituent phonemes. Note=The disease is
+            caused by mutations affecting the gene represented in this entry.
+            DISEASE: Note=A chromosomal aberration involving FOXP2 is a cause of
+            severe speech and language impairment. Translocation
+            t(5;7)(q22;q31.2).
+            SIMILARITY: Contains 1 C2H2-type zinc finger.
+            SIMILARITY: Contains 1 fork-head DNA-binding domain.
+            WEB RESOURCE: Name=Protein Spotlight; Note=Talking heads - Issue 51
+            of October 2004;
+            URL="http://web.expasy.org/spotlight/back_issues/sptlt051.shtml";
+            WEB RESOURCE: Name=GeneReviews;
+            URL="http://www.ncbi.nlm.nih.gov/sites/GeneTests/lab/gene/FOXP2";
+            WEB RESOURCE: Name=Wikipedia; Note=FOXP2 entry;
+            URL="http://en.wikipedia.org/wiki/FOXP2";
+FEATURES             Location/Qualifiers
+     CHAIN           1..715
+                     /description="Forkhead box protein P2."
+     ZN_FING         346..371
+                     /description="C2H2-type."
+     DNA_BIND        504..594
+                     /description="Fork-head."
+     REGION          388..409
+                     /description="Leucine-zipper."
+     REGION          422..426
+                     /description="CTBP1-binding (By similarity)."
+     COMPBIAS        53..268
+                     /description="Gln-rich."
+     VAR_SEQ         1..92
+                     /description="Missing (in isoform 3)."
+     VAR_SEQ         86
+                     /description="Q -> QELLPETKLCICGHSSGDGHPHNTFA (in isoform 4
+                     and isoform 5)."
+     VAR_SEQ         87
+                     /description="V -> P (in isoform 8)."
+     VAR_SEQ         88..715
+                     /description="Missing (in isoform 8)."
+     VAR_SEQ         132
+                     /description="Q -> QDFLDSGLENFRAALEKN (in isoform 9)."
+     VAR_SEQ         133..143
+                     /description="QQLQEFYKKQQ -> VMWVTCFGVLA (in isoform 5)."
+     VAR_SEQ         144..715
+                     /description="Missing (in isoform 5)."
+     VAR_SEQ         366..715
+                     /description="Missing (in isoform 7)."
+     VAR_SEQ         423..432
+                     /description="LNLVSSVTMS -> VSAYCFINSK (in isoform 6)."
+     VAR_SEQ         433..715
+                     /description="Missing (in isoform 6)."
+     VARIANT         553
+                     /description="R -> H (in SPCH1)."
+     CONFLICT        29
+                     /description="A -> V (in Ref. 2; AAM60762)."
+     CONFLICT        134
+                     /description="Q -> H (in Ref. 10; AAB91439)."
+     CONFLICT        290..304
+                     /description="DLTTNNSSSTTSSNT -> EEFPVQGPAAVCAGL (in Ref.
+                     10; AAB91439)."
+     CONFLICT        414
+                     /description="S -> L (in Ref. 2; AAM60766)."
+     HELIX           509..519
+                     /description
+     HELIX           527..541
+                     /description
+     HELIX           545..558
+                     /description
+     STRAND          562..567
+                     /description
+     STRAND          568..572
+                     /description
+     HELIX           577..583
+                     /description
+ORIGIN
+        1 mmqesateti snssmnqngm stlssqldag srdgrssgdt ssevstvell hlqqqqalqa
+       61 arqlllqqqt sglkspkssd kqrplqvpvs vammtpqvit pqqmqqilqq qvlspqqlqa
+      121 llqqqqavml qqqqlqefyk kqqeqlhlql lqqqqqqqqq qqqqqqqqqq qqqqqqqqqq
+      181 qqqqqqqqqq qhpgkqakeq qqqqqqqqql aaqqlvfqqq llqmqqlqqq qhllslqrqg
+      241 lisippgqaa lpvqslpqag lspaeiqqlw kevtgvhsme dngikhggld lttnnssstt
+      301 ssntskaspp ithhsivngq ssvlsarrds ssheetgash tlyghgvckw pgcesicedf
+      361 gqflkhlnne halddrstaq crvqmqvvqq leiqlskere rlqammthlh mrpsepkpsp
+      421 kplnlvssvt msknmletsp qslpqtpttp tapvtpitqg psvitpasvp nvgairrrhs
+      481 dkynipmsse iapnyefykn advrppftya tlirqaimes sdrqltlnei yswftrtfay
+      541 frrnaatwkn avrhnlslhk cfvrvenvkg avwtvdevey qkrrsqkitg sptlvknipt
+      601 slgygaalna slqaalaess lpllsnpgli nnassgllqa vhedlngsld hidsngnssp
+      661 gcspqphihs ihvkeepvia ededcpmslv ttanhspele ddreieeepl sedle
+//

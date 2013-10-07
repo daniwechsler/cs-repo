@@ -1,0 +1,114 @@
+LOCUS       FOXP2_GORGO              713 aa                     UNK 31-AUG-2004
+DEFINITION  RecName: Full=Forkhead box protein P2;
+ACCESSION   Q8MJ99
+VERSION     Q8MJ99
+DBLINK      EMBL:AF512948
+            EMBL:AY143180
+            EMBL:AY064597
+            EMBL:AY064583
+            EMBL:AY064584
+            EMBL:AY064586
+            EMBL:AY064585
+            EMBL:AY064588
+            EMBL:AY064590
+            EMBL:AY064592
+            EMBL:AY064594
+            EMBL:AY064596
+            EMBL:AY064595
+            EMBL:AY064593
+            EMBL:AY064591
+            EMBL:AY064589
+            EMBL:AY064587
+            ProteinModelPortal:Q8MJ99
+            SMR:Q8MJ99
+            HOVERGEN:HBG051657
+            GO:GO:0005634
+            GO:GO:0003677
+            GO:GO:0046872
+            GO:GO:0042803
+            GO:GO:0043565
+            GO:GO:0003700
+            GO:GO:0021757
+            GO:GO:0021758
+            GO:GO:0006351
+            Gene3D:1.10.10.10
+            InterPro:IPR001766
+            InterPro:IPR018122
+            InterPro:IPR011991
+            InterPro:IPR015880
+            Pfam:PF00250
+            PRINTS:PR00053
+            SMART:SM00339
+            SMART:SM00355
+            PROSITE:PS00657
+            PROSITE:PS00658
+            PROSITE:PS50039
+            PROSITE:PS00028
+            PROSITE:PS50157
+KEYWORDS    Complete proteome; DNA-binding; Metal-binding; Nucleus; Reference
+            proteome; Repressor; Transcription; Transcription regulation; Zinc;
+            Zinc-finger.
+SOURCE      .
+  ORGANISM  Gorilla gorilla gorilla (Lowland gorilla)
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Gorilla.
+REFERENCE   1
+  AUTHORS   Enard W., Przeworski M., Fisher S.E., Lai C.S.L., Wiebe V., Kitano
+            T., Monaco A.P., Paeaebo S.
+  TITLE     Molecular evolution of FOXP2, a gene involved in speech and
+            language.
+  JOURNAL   Nature 418:869-872(2002).
+   PUBMED   12192408
+REFERENCE   2
+  AUTHORS   Zhang J., Webb D.M., Podlaha O.
+  TITLE     Accelerated protein evolution and origins of human-specific
+            features: Foxp2 as an example.
+  JOURNAL   Genetics 162:1825-1835(2002).
+   PUBMED   12524352
+REFERENCE   3
+  AUTHORS   Walter N.A.R., Thompson J., McGoldrick D.J., Messier W.
+  TITLE     The FOXP2 gene, implicated in language development, is conserved in
+            mammalian evolution.
+  JOURNAL   Submitted (NOV-2001) to the EMBL/GenBank/DDBJ databases.
+  REMARK    TISSUE=Blood;
+COMMENT     FUNCTION: Transcriptional repressor that may play a role in the
+            specification and differentiation of lung epithelium. May also play
+            a role in developing neural, gastrointestinal and cardiovascular
+            tissues. Can act with CTBP1 to synergistically repress transcription
+            but CTPBP1 is not essential (By similarity).
+            SUBUNIT: Forms homodimers and heterodimers with FOXP1 and FOXP4.
+            Dimerization is required for DNA-binding. Interacts with CTBP1 (By
+            similarity).
+            SUBCELLULAR LOCATION: Nucleus (Probable).
+            DOMAIN: The leucine-zipper is required for dimerization and
+            transcriptional repression (By similarity).
+            SIMILARITY: Contains 1 C2H2-type zinc finger.
+            SIMILARITY: Contains 1 fork-head DNA-binding domain.
+FEATURES             Location/Qualifiers
+     CHAIN           1..713
+                     /description="Forkhead box protein P2."
+     ZN_FING         344..369
+                     /description="C2H2-type."
+     DNA_BIND        502..592
+                     /description="Fork-head."
+     REGION          386..407
+                     /description="Leucine-zipper."
+     REGION          420..424
+                     /description="CTBP1-binding (By similarity)."
+     COMPBIAS        53..266
+                     /description="Gln-rich."
+ORIGIN
+        1 mmqesateti snssmnqngm stlssqldag srdgrssgdt ssevstvell hlqqqqalqa
+       61 arqlllqqqt sglkspkssd kqrplqvpvs vammtpqvit pqqmqqilqq qvlspqqlqa
+      121 llqqqqavml qqqqlqefyk kqqeqlhlql lqqqqqqqqq qqqqqqqqqq qqqqqqqqqq
+      181 qqqqqqqqqh pgkqakeqqq qqqqqqqlaa qqlvfqqqll qmqqlqqqqh llslqrqgli
+      241 sippgqaalp vqslpqagls paeiqqlwke vtgvhsmedn gikhggldlt tnnsssttss
+      301 ttskasppit hhsivngqss vlnarrdsss heetgashtl yghgvckwpg cesicedfgq
+      361 flkhlnneha lddrstaqcr vqmqvvqqle iqlskererl qammthlhmr psepkpspkp
+      421 lnlvssvtms knmletspqs lpqtpttpta pvtpitqgps vitpasvpnv gairrrhsdk
+      481 ynipmsseia pnyefyknad vrppftyatl irqaimessd rqltlneiys wftrtfayfr
+      541 rnaatwknav rhnlslhkcf vrvenvkgav wtvdeveyqk rrsqkitgsp tlvkniptsl
+      601 gygaalnasl qaalaesslp llsnpglinn assgllqavh edlngsldhi dsngnsspgc
+      661 spqphihsih vkeepviaed edcpmslvtt anhspeledd reieeeplse dle
+//

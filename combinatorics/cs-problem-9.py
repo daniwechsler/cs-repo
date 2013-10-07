@@ -3,23 +3,20 @@
 # Author: Daniel Wechsler
 #
 
-#
-# Compares two sequences given as strings.
-#
-#
-
 import numpy as np
+import sys
 import matplotlib.pyplot as plt
 import matplotlib
+from matplotlib.backends.backend_pdf import PdfPages
 from Bio import ExPASy, SeqIO, Phylo
 
 
 #
 # Given two sequences seqA and seqB the function creates
-# a dotplot (using the given region size) and stores the
+# a dot plot (using the given region size) and stores the
 # plot as an image (directory plots/)
 #
-def dotPlotSequences (seqA, seqB, regionSize, titleA = "", titleB = "") :
+def dotPlotSequences (seqA, seqB, regionSize, titleA = "", titleB = "", pdf = None) :
     
     lenA = len(seqA)
     lenB = len(seqB)
@@ -43,32 +40,39 @@ def dotPlotSequences (seqA, seqB, regionSize, titleA = "", titleB = "") :
     ax.plot(x, y, '.')
     ax.set_title("Pairwise dot plot (" + str(titleA) + "/" + str(titleB) + ") - Region size: " + str(regionSize))
     plt.xlabel(titleA)
-    plt.ylabel(titleB)
+    plt.ylabel(titleB)    
     plt.savefig("plots/" + str(regionSize) + "-"  + titleA + "-" + titleB + "-.png")   
 
+    # If given, write plot to the pdf file
+    if pdf != None:
+         plt.savefig(pdf, format='pdf')    
 
 
-
-def drawNewickTree () :
-    tree = Phylo.read("tree.txt", "newick")
+#
+# Draws Newick tree from file with given name.
+#
+def drawNewickTree (fileName) :
+    tree = Phylo.read(fileName, "newick")
     tree.rooted = True
     Phylo.draw(tree)
     
 
 
 
+#
+# Gene: FOXP2
+# -----------
+#
+# Id                    Species
+# ==============================================================
+# FOXP2_MOUSE		Mus musculus (Mouse)
+# FOXP2_GORGO           Gorilla gorilla gorilla (Lowland gorilla)
+# FOXP2_PANTR		Pan troglodytes (Chimpanzee)
+# FOXP2_RAT		Rattus norvegicus (Rat)
+# FOXP2_HUMAN		Homo sapiens (Human)
+#
 
-"""
-Gene: FOXP2
------------
-FOXP2_MOUSE		Mus musculus (Mouse)
-FOXP2_GORGO             Gorilla gorilla gorilla (Lowland gorilla)
-FOXP2_PANTR		Pan troglodytes (Chimpanzee)
-FOXP2_RAT		Rattus norvegicus (Rat)
-FOXP2_HUMAN		Homo sapiens (Human)
-"""
-
-regionSize   = 100
+regionSize   = 50
 sequenceFils = [
     "FOXP2_MOUSE", 
     "FOXP2_GORGO",
@@ -76,7 +80,6 @@ sequenceFils = [
     "FOXP2_RAT",
     "FOXP2_HUMAN"]
 sequences = []
-
 
 # Read all sequence files defined in the list (directory genbank-files/)
 for file in sequenceFils :
@@ -87,23 +90,58 @@ for file in sequenceFils :
     handle.close()
 
 
+# Create a pdf showing all plots
+pdf = PdfPages("plots/dot_plots-" + str(regionSize) + ".pdf")
+
 # Compute dot plot for each pair (directory plots/)
-dotPlotSequences (sequences[0], sequences[1], regionSize, "Mouse", "Gorilla")
-dotPlotSequences (sequences[0], sequences[2], regionSize, "Mouse", "Chimpanzee")
-dotPlotSequences (sequences[0], sequences[3], regionSize, "Mouse", "Rat")
-dotPlotSequences (sequences[0], sequences[4], regionSize, "Mouse", "Human")
-dotPlotSequences (sequences[1], sequences[2], regionSize, "Gorilla", "Chimpanzee")
-dotPlotSequences (sequences[1], sequences[3], regionSize, "Gorilla", "Rat")
-dotPlotSequences (sequences[1], sequences[4], regionSize, "Gorilla", "Human")
-dotPlotSequences (sequences[2], sequences[3], regionSize, "Chimpanzee", "Rat")
-dotPlotSequences (sequences[2], sequences[4], regionSize, "Chimpanzee", "Human")
-dotPlotSequences (sequences[3], sequences[4], regionSize, "Rat", "Human")
+dotPlotSequences (sequences[0], sequences[1], regionSize, "Mouse", "Gorilla", pdf)
+dotPlotSequences (sequences[0], sequences[2], regionSize, "Mouse", "Chimpanzee", pdf)
+dotPlotSequences (sequences[0], sequences[3], regionSize, "Mouse", "Rat", pdf)
+dotPlotSequences (sequences[0], sequences[4], regionSize, "Mouse", "Human", pdf)
+dotPlotSequences (sequences[1], sequences[2], regionSize, "Gorilla", "Chimpanzee", pdf)
+dotPlotSequences (sequences[1], sequences[3], regionSize, "Gorilla", "Rat", pdf)
+dotPlotSequences (sequences[1], sequences[4], regionSize, "Gorilla", "Human", pdf)
+dotPlotSequences (sequences[2], sequences[3], regionSize, "Chimpanzee", "Rat", pdf)
+dotPlotSequences (sequences[2], sequences[4], regionSize, "Chimpanzee", "Human", pdf)
+dotPlotSequences (sequences[3], sequences[4], regionSize, "Rat", "Human", pdf)
+
+pdf.close()
 
 # Results:
 #
-# The less perforated the diagonal is the more similare the compared amino-acid sequences are.
+# The less perforated the diagonal is the more similar the compared amino-acid sequences are
 # (And the closer the species are related).
-# ,
+# Evaluating the dot plots gives to following:
+#
+# Region Size: 50 Characters
+#
+# Species A     Species B       Similarity* (%)
+# ============================================
+# Mouse         Gorilla         89     
+# Mouse         Chimpanzee      88         
+# Mouse         Rat             81
+# Mouse         Human           80
+# Gorilla       Chimpanzee      99
+# Gorilla       Rat             84
+# Gorilla       Human           90
+# Chimpanzee    Rat             84
+# Chimpanzee    Human           90
+# Rat           Human           78
+#
+# * Similarity is computed by measuring gap size on plot (manually).
+# * Common gaps between different species are indicators that they are descendent 
+#   of each other or have a common ancestor.
+#
+# I tried to build a tree diagram (Newick) from what I found in the dot plots:
 # 
+
+drawNewickTree("tree.txt")
+
+
+
+
+
+
+
 
 
