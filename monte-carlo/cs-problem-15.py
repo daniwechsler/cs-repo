@@ -60,7 +60,7 @@ N = 1500
 haltonSeqBaseTwo    = computeHaltonSequence (N, 2)
 haltonSeqBaseThree  = computeHaltonSequence (N, 3)
 
-# Generate plot using python random function insted
+# Generate plot using python random function
 randomX = []
 randomY = [] 
 for i in range (0, N) :
@@ -68,7 +68,7 @@ for i in range (0, N) :
     randomY.append(random.random())
 
 
-# Plot the halton points and random points (using python random function)
+# Plot the Halton points and random points (using python random function)
 matplotlib.rcParams['axes.unicode_minus'] = False
 subplot(2, 1, 1)
 plot(haltonSeqBaseTwo, haltonSeqBaseThree, '.')
@@ -77,7 +77,7 @@ plot(randomX, randomY, '.')
 show()
 
 # Observation:
-# The distribution of dots using the halton method is uniform
-# wheras the random dots distribution is more clustered.
+# The distribution of dots using the Halton method is uniform
+# whereas the random dots distribution is more clustered.
 #
 
