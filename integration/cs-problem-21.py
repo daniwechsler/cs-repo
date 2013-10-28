@@ -13,7 +13,7 @@ coefficients = [1375.0/576.0, 125.0/144.0, 335.0/96.0, 125.0/144.0, 1375.0/576.0
 
 #
 # Basically computes the integral of f for the interval [a,b].
-# The implementation was a bit of trial and error process towards
+# The implementation was a bit of a trial and error process towards
 # the correct answer sqr(pi)....
 #
 def fivepoint (f, a, b, B) :
