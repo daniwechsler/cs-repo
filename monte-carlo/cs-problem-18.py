@@ -82,7 +82,7 @@ N2  = 36
 i   = 0
 # Simpulate 1000 walks
 distances = []
-while i<1000 :
+while i<400 :
     puppet = Puppet(N1, N2)
     puppet.start()
     
@@ -99,7 +99,7 @@ u   = v + 0.12 + 0.11/v
 x   = np.linspace(0.0, 1.0, 101)
 k   = 0
 r   = None
-while k<100 : # Compute (5.11) for a range of k. A bit circuitous - I konw
+while k<1000 : # Compute (5.11) for a range of k. A bit circuitous - I konw
     y   = 2 * (pow(-1, k) * np.exp(-2 * pow((k+1),2) * pow(u,2) * pow(np.array(x), 2))) 
     if r == None :
         r = y
