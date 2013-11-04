@@ -1,7 +1,7 @@
 #
-# CS Problem 22
 # Author: Daniel Wechsler
 #
+
 
 
 import numpy as np
@@ -10,8 +10,8 @@ import math
 from scipy import integrate
 from scipy.linalg import solve
 from fractions import Fraction
-from pylab import subplot,plot,show
 import integration_functions as fp
+
 
 
 
@@ -24,6 +24,7 @@ def evalp (x, c) :
     sum = c[-1]
     for k in range(n, 0, -1):
         sum = x * sum + c[k-1]
+
     return sum
 
 #
@@ -35,15 +36,37 @@ def evalpSqr (x, c) :
     sum = c[-1]
     for k in range(n, 0, -1):
         sum = x * sum + c[k-1]
+
     return pow(sum, 2)
 
+#
+# Evaluates a polynome defined by c at x and divides the
+# resutl by sqrt(1-x^2).
+#
+def evalChebyp (x, c) :
+    n = len(c)-1
+    s = c[-1]
+    for k in range(n, 0, -1):
+        s = x * s + c[k-1]
+
+    s = s / math.sqrt(1.0 - x**2)
+    return s
+
+
+def evalChebypSqr (x, c) :
+    cp = evalpSqr(x,c)
+    return cp / math.sqrt(1.0 - x**2)
+
 
 #
-# Computes the first n+1 Legendre polynomials using the Gram-Schmidt
+# Computes the first n+1 Chebysehv polynomials using the Gram-Schmidt
 # orthonormalization process. The function returns a list of those
-# polynomials (represented as lists of their coefficients)
+# polynomials. A polynomial is represented by a list of coefficients:
+# [c0*1 + c1*x + c2*x^2 + cn*x^n]
+# Depending on the parameter alg = ["newton"|"gauss"] different integration
+# procedures are used.
 #
-def Legendre (n, B=50) :
+def Chebyshev (n, alg = "newton", B=5000) :
 
     L           = []    # Holds all the computed Legendre polynomials
     nCurrent    = 0
@@ -52,12 +75,18 @@ def Legendre (n, B=50) :
     N           = []    # Holds the normalized polynomials
     
     while nCurrent <= n-1:
-
+     
         
-        # (1) Normalize current polynomial
-        integral            = fp.fivepoint(evalpSqr, -1, 1, B, [pCurrent]) 
-        length              = math.sqrt(integral)
-        pCurrentNormalized  = map (lambda x : x/length, pCurrent)
+        # Normalize current polynomial
+        if alg == "newton" :
+            integral            = fp.fivepoint(evalChebypSqr, -1.0, 1.0, B, [pCurrent]);
+        elif alg == "gauss" :
+            integral            = fp.chebyshevGauss(evalpSqr, B, [pCurrent])
+        else :
+            return False
+    
+        length                  = math.sqrt(integral)
+        pCurrentNormalized      = map (lambda x : x/length, pCurrent)   
         N.append(pCurrentNormalized)
 
         # 
@@ -69,7 +98,13 @@ def Legendre (n, B=50) :
         for i in range(0, len(N)):
 
             pProd           = ([0] * (nCurrent+1)) + N[i]               # Pn-i' * x^n-1 (Insert n+1 0's at beginning of coefficient list)
-            dotProduct      = fp.fivepoint(evalp, -1, 1, B, [pProd])   # Compute dot product  
+           
+            if alg == "newton" :
+
+                dotProduct      = fp.fivepoint(evalChebyp, -1.0, 1.0, B, [pProd])    # Compute dot product  
+            elif alg == "gauss" :
+                dotProduct      = fp.chebyshevGauss(evalp, B, [pProd])    # Compute dot product
+                
             s               = map (lambda x : x*dotProduct, N[i])
             
             # Add coefficient of 's' to coefficients of 'S'
@@ -86,7 +121,7 @@ def Legendre (n, B=50) :
         a       = 1/xAtOne
         pNextN  = map (lambda x : x*a, pNext)
 
-        # Store found Legendre polynomial  Pn+1(X) 
+        # Store found Chebyshev polynomial  Pn+1(X) 
         L.append(pNextN)
         pCurrent    = pNextN
         nCurrent    += 1
@@ -95,25 +130,8 @@ def Legendre (n, B=50) :
       
     return L
 
-    
-B = 50                              # Even if B is 1 the first Legendre polynomials
-                                    # are computed correctly. The integration function
-                                    # integrates correctly up to x^5. The normalization 
-                                    # step (1) for a polynomial of degree n needs to compute
-                                    # the integral of a polynomial of degree n^2. Thus
-                                    # as soon the polynomial has degee n the normalization
-                                    # is not correct any more.
-n = 4
-L = Legendre(n, B)                  # Compute n+1 Legendre polynomial s            
-x = np.arange(-1, 1, 0.01)  
 
-# Plot the polynoms
-for l in range (0, len(L)) :
-    y = []    
-    for i in x :
-        y.append(evalp(i, L[l]))
-    plot(x, y)
 
-plt.show()
+
 
 

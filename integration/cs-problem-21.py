@@ -6,7 +6,7 @@
 import numpy as np
 from scipy.linalg import solve
 from fractions import Fraction
-import fivepoint as fp
+import integration_functions as fp
 
 
 
