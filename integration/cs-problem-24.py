@@ -10,12 +10,12 @@ import chebyshev as ch
 
 
 n = 5
-B = 1000        # Hight B is required
-# Compute first n Chebyshev polynomials using gauss chebyshev quadrature
-L = ch.Chebyshev(n, "gauss")              
+M = 10        
+# Compute first n Chebyshev polynomials using gauss Chebyshev quadrature
+L = ch.Chebyshev(n, "gauss", M)              
 x = np.arange(-1, 1, 0.01)  
 
-# Plot the polynoms
+# Plot the polynomials
 for l in range (0, len(L)) :
     y = []    
     for i in x :

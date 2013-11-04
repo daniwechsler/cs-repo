@@ -16,7 +16,7 @@ import integration_functions as fp
 
 
 #
-# Evaluates a polynome defined by its coefficients c
+# Evaluates a polynomial defined by its coefficients c
 # at point x
 #
 def evalp (x, c) :
@@ -27,7 +27,7 @@ def evalp (x, c) :
     return sum
 
 #
-# Evaluates a polynome defined by its coefficients c
+# Evaluates a polynomial defined by its coefficients c
 # at point x and returns x^2
 #
 def evalpSqr (x, c) :
@@ -101,7 +101,7 @@ B = 50                              # Even if B is 1 the first Legendre polynomi
                                     # integrates correctly up to x^5. The normalization 
                                     # step (1) for a polynomial of degree n needs to compute
                                     # the integral of a polynomial of degree n^2. Thus
-                                    # as soon the polynomial has degee n the normalization
+                                    # as soon the polynomial has degree n the normalization
                                     # is not correct any more.
 n = 4
 L = Legendre(n, B)                  # Compute n+1 Legendre polynomial s            

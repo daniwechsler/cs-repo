@@ -16,7 +16,7 @@ import integration_functions as fp
 
 
 #
-# Evaluates a polynome defined by its coefficients c
+# Evaluates a polynomial defined by its coefficients c
 # at point x
 #
 def evalp (x, c) :
@@ -28,7 +28,7 @@ def evalp (x, c) :
     return sum
 
 #
-# Evaluates a polynome defined by its coefficients c
+# Evaluates a polynomial defined by its coefficients c
 # at point x and returns x^2
 #
 def evalpSqr (x, c) :
@@ -39,10 +39,8 @@ def evalpSqr (x, c) :
 
     return pow(sum, 2)
 
-#
-# Evaluates a polynome defined by c at x and divides the
-# resutl by sqrt(1-x^2).
-#
+# Evaluates a polynomial defined by c at x and divides the
+# result by sqrt(1-x^2).
 def evalChebyp (x, c) :
     n = len(c)-1
     s = c[-1]
