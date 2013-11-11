@@ -10,7 +10,12 @@ import math
 from scipy.integrate import odeint
 from numpy import exp
 
-
+#
+# Euler Method:
+# y0            := Initial condition
+# [x0, xMax]    := Defines the interval within to solve for y
+# f             := Function computing derivative of y
+#
 def eulerMethod (y0, x0, xMax, f, h) :
 
     Xn  = []
@@ -26,7 +31,12 @@ def eulerMethod (y0, x0, xMax, f, h) :
 
     return Yn, Xn
 
-
+#
+# Runge-Kutta Method:
+# y0            := Initial condition
+# [x0, xMax]    := Defines the interval within to solve for y
+# f             := Function computing derivative of y
+#
 def rungeKuttaMethod (y0, x0, xMax, f, h) :
 
     Xn  = []
@@ -43,6 +53,12 @@ def rungeKuttaMethod (y0, x0, xMax, f, h) :
     return Yn, Xn
 
 
+#
+# Fourth-Order-Runge-Kutta Method:
+# y0            := Initial condition
+# [x0, xMax]    := Defines the interval within to solve for y
+# f             := Function computing derivative of y
+#
 def rungeKuttaForthOrderMethod (y0, x0, xMax, f, h) :
     
     Xn  = []
@@ -65,17 +81,18 @@ def rungeKuttaForthOrderMethod (y0, x0, xMax, f, h) :
     return Yn, Xn
 
 
-
-
+#
+# dy/dx = 2y 
+#
 def f (y, x) :
-    return 2*x*y
+    return 2*x
 
 
+# Solve f for given parameters
 xMin    = 0.0
-xMax    = 2.0
+xMax    = 2
 h       = 0.2
-y0      = 4.0
-
+y0      = 4
 
 YnEuler, XnEuler    = eulerMethod(y0, xMin, xMax, f, h)
 YnRK, XnRK          = rungeKuttaMethod(y0, xMin, xMax, f, h)
@@ -83,8 +100,8 @@ YnRKfo, XnRKfo      = rungeKuttaForthOrderMethod(y0, xMin, xMax, f, h)
 t = np.linspace(xMin, xMax, 60)
 
 
+# Plot the solutions computed by the different methods
 plt.title('dy/dx = 2*x')
-
 p1 = plt.plot(XnEuler, YnEuler, label='Euler')
 p2 = plt.plot(XnRK, YnRK, label='Runge-Kutta')
 p3 = plt.plot(XnRKfo, YnRKfo, label='Fourth-Order-Runge-Kutta')
