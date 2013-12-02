@@ -4,15 +4,10 @@
 #
 
 
-from scipy import fft, ifft
-from scipy.integrate import odeint
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy import exp,arange
-import random
-import copy
 import math
-from matplotlib import animation
 
 
 #
